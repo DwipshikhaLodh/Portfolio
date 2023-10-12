@@ -1,10 +1,11 @@
+import Image from 'next/image'
 import styles from '../page.module.scss'
 
 function Contact() {
     return (
         <div className={styles.contactContainer} id='contactme'>
             <div className={styles.imgContainer}>
-                <img src='/images/illus.png' width={600} height={300}></img>
+                <Image alt='illustration' src='/images/illus.png' width={600} height={300}></Image>
             </div>
             <div className={styles.contactForm} data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                 <form method='POST' action='https://formspree.io/f/xeqbokow'>
