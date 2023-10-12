@@ -651,22 +651,23 @@
 /*  footer section  */
 .footerContainer{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   margin-top: 20px;
-  padding: 30px;
-  background-color: white;
-  color: black;
+  padding: 10px;
+  background-image: linear-gradient(45deg, black, rgb(16, 16, 43), black);
+  color: white;
 
   div{
     width: 40%;
-    border: 2px solid white;
-    border-radius: 8px;
-    box-shadow: 1px 1px 8px 6px rgba(129, 131, 176, 0.703);
     height: 80px;
-    padding: 10px;
+    padding: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 
     span{
       display: flex;
@@ -683,41 +684,52 @@
 
   .contactDetail{
     margin-right: 8px;
+    justify-content: space-around;
+    border-bottom: 1px solid white;
+    span{
+      color: grey;
+    }
+  }
+
+  .impLinks{
+    span{
+      font-size: 2em;
+      margin: 4px;
+    }
   }
 }
 
-@media screen and (max-width: 865px){
+@media screen and (max-width: 1050px){
   .footerContainer{
-    flex-wrap: wrap;
+    div{
+      width: 60%;
+    }
+  }
+}
 
+@media screen and (max-width: 700px){
+  .footerContainer{
+    padding: 10px;
     div{
       width: 80%;
-      margin-bottom: 20px;
+      margin: 0px;
+      padding: 10px;
+      height: 40px;
+      margin-bottom: 6px;
     }
+  }
+}
 
+@media screen and (max-width: 550px){
+  .footerContainer{
     .contactDetail{
-      transform: translate(5px);
+      flex-direction: column;
+      padding-top: 24px;
+      padding-bottom: 24px;
     }
   }
 }
 
-@media screen and (max-width: 593px){
-  .footerContainer{
-    padding-left: 8px;
-    padding-right: 8px;
-    div{
-      width: 90%;
-    }
-  }
-}
-
-@media screen and (max-width: 370px){
-  .footerContainer{
-    div{
-      height: 140px;
-    }
-  }
-}
 
 /* experience section */
 

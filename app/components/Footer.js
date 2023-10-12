@@ -19,11 +19,9 @@ function Footer() {
             <div className={styles.impLinks}>
                 <span>
                     <Link href='https://www.linkedin.com/in/dwipshikha-lodh-8137b91a9'><AiFillLinkedin/></Link>
-                    <p>https://www.linkedin.com/in/dwipshikha-lodh-8137b91a9</p>
                 </span>
                 <span>
                     <Link href='https://github.com/DwipshikhaLodh'><AiFillGithub/></Link>
-                    <p>https://github.com/DwipshikhaLodh</p>
                 </span>
             </div>
         </div>
