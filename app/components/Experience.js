@@ -36,8 +36,8 @@ function Experience() {
             <h1>My Previous Experiences</h1>
             <div className={styles.expCardContainer}>
             {
-                exps.map(exp => {
-                    return <ExpCard role={exp.role} company={exp.company} outline={exp.outline} duration={exp.duration} logo={exp.logo}/>
+                exps.map((exp, key) => {
+                    return <ExpCard key={key} role={exp.role} company={exp.company} outline={exp.outline} duration={exp.duration} logo={exp.logo}/>
                 })
             }
             </div>

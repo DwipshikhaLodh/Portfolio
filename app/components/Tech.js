@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import styles from '../page.module.scss'
 
 
@@ -38,8 +39,8 @@ function Tech() {
             <h1>Technologies I have used till date</h1>
             <div>
                 {
-                    techs.map(tech => {
-                        return <img data-aos="zoom-in" src={tech.image} width={200} height={200}></img>
+                    techs.map((tech, index) => {
+                        return <Image key={index} alt='tech logo' data-aos="zoom-in" src={tech.image} width={200} height={200}></Image>
                     })
                 }
             </div>

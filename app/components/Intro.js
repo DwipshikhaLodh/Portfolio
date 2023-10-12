@@ -23,13 +23,13 @@ function Intro() {
                 repeat={Infinity}
                 /></h1>
                 <p>
-                As a computer science graduate with a flair for web development, I fuse cutting-edge tech with creativity. My work thrives on crafting exceptional digital experiences, all while staying along with industry trends. Let's build the web's future together.
+                As a computer science graduate with a flair for web development, I fuse cutting-edge tech with creativity. My work thrives on crafting exceptional digital experiences, all while staying along with industry trends. Let us build the future of web together.
                 </p>
                 <div>
                     <Link className={styles.hireBTN} href='#contactme'>Hire Me</Link>
                     
                     <a href='/images/resume.png' download='resume'>
-                    <button className={styles.resumeBTN}>Resume <AiOutlineCloudDownload/> </button>
+                        <button className={styles.resumeBTN}>Resume <AiOutlineCloudDownload/> </button>
                     </a>
                 </div>
             </div>

@@ -1,6 +1,7 @@
 import styles from '../page.module.scss'
 import Link from 'next/link'
 import ProjectCard from './ProjectCard'
+import Image from 'next/image'
 
 function Projects() {
 
@@ -32,18 +33,18 @@ function Projects() {
             <p><div></div><span>Projects</span></p>
             <h1>Projects I have worked on</h1>
             <div className={styles.projectIntroContainer}>
-                <p className={styles.projectIntro}>In my web development career, I've tackled diverse projects using advanced technologies, each making a significant impact in various fields. From e-commerce platforms to data-driven apps, my work showcases innovation and a passion for unique challenges. With a deep understanding of tech, I bridge vision and reality, continually pushing digital boundaries.</p>
+                <p className={styles.projectIntro}>In my web development career, I have tackled diverse projects using advanced technologies, each making a significant impact in various fields. From e-commerce platforms to data-driven apps, my work showcases innovation and a passion for unique challenges. With a deep understanding of tech, I bridge vision and reality, continually pushing digital boundaries.</p>
             </div>
             <div className={styles.projects}>
                 {
-                    projects.map(project => {
-                        return <ProjectCard title={project.title} image={project.image} desc={project.desc} tech={project.tech} link={project.link}/>
+                    projects.map((project, index) => {
+                        return <ProjectCard key={index} title={project.title} image={project.image} desc={project.desc} tech={project.tech} link={project.link}/>
                     })
                 }
             </div>
             <div className={styles.githubContainer}>
                 <p>visit github</p>
-                <Link className={styles.github} href='https://github.com/DwipshikhaLodh?tab=repositories'><img src='/images/github.png' height={200} width={400}></img></Link>
+                <Link className={styles.github} href='https://github.com/DwipshikhaLodh?tab=repositories'><Image src='/images/github.png' height={200} width={400} alt='github image'></Image></Link>
             </div>
         </div>
     )

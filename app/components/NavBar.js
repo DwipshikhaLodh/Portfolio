@@ -61,9 +61,9 @@ function NavBar() {
             </div>
             <ul ref={menu}>
                 {
-                    NavBarLinks.map(option => {
+                    NavBarLinks.map((option, index) => {
                         return (
-                            <li ref={list} className={styles.navLink}>
+                            <li ref={list} key={index} className={styles.navLink}>
                                 <NavLink path={option.path} title={option.title}/>
                             </li>
                         )
