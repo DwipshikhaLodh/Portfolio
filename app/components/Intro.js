@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 function Intro() {
     return (
-        <div className={styles.introbody}>
+        <div className={styles.introbody} id='intro'>
             <div className={styles.bio}>
                 <h1><TypeAnimation
                 sequence={[
@@ -35,7 +35,7 @@ function Intro() {
             </div>
             <div className={styles.dpContainer}>
                 <div className={styles.dp}>
-                    <Image className={styles.avatar} src='/images/avatarDP.png' width={250} height={250} alt='avatar'></Image>
+                    <Image className={styles.avatar} src='/images/DP1.jpg' width={250} height={250} alt='avatar'></Image>
                 </div>
             </div>
         </div>

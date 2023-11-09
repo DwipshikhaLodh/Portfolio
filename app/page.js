@@ -12,6 +12,7 @@ import Experience from './components/Experience'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect } from 'react'
+import ScrollUp from './components/ScrollUp'
 
 export default function Home() {
 
@@ -25,6 +26,7 @@ export default function Home() {
     <main className={styles.body}>
       <NavBar/>
       <Intro/>
+      <ScrollUp/>
       <Illus/>
       <Projects/>
       <Experience/>

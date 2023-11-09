@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import styles from '../page.module.scss'
 
+
 function Illus() {
     return (
         <div className={styles.illus}>

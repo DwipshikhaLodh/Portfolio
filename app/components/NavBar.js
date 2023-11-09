@@ -6,6 +6,7 @@ import { useState , useRef } from 'react'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { AiOutlineClose } from 'react-icons/ai'
 import { TbClick } from 'react-icons/tb'
+import Image from 'next/image'
 
 const NavBarLinks = [
     {
@@ -52,7 +53,7 @@ function NavBar() {
     return (
         <div className={styles.navBar}>
             <div>
-                <Link href='https://github.com/DwipshikhaLodh'><p>Github</p><TbClick/></Link>
+                <Link href='https://github.com/DwipshikhaLodh'><Image src="/images/githublogo.png" alt='github' width={50} height={50}></Image></Link>
             </div>
             <div className={styles.hamburgerContainer}>
                 {

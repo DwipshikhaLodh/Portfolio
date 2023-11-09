@@ -17,7 +17,7 @@
   flex-wrap: wrap-reverse;
   align-items: center;
   padding: 30px;
-  margin-top: 40px;
+  margin-top: 140px;
   margin-bottom: 20px;
 }
 
@@ -73,6 +73,8 @@
   justify-content: center;
   align-items: center;
   perspective: 900px;
+  background-size: contain;
+  height: 300px;
 }
 
 .dpContainer, .dp{
@@ -80,23 +82,21 @@
 }
 
 .dp{
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 10px solid white;
   border-radius: 130px;
   overflow: hidden;
   margin-bottom: 50px;
   transition: all 1.5s cubic-bezier(0.7, -.5, 0.3, 1.0);
   transform-style: preserve-3d;
-  height: 250px;
-  background-image: url(/images/js1.png);
 }
 
 .introbody:hover {
   .dp{
-    transform: rotateY(180deg);
+    transform: rotateY(360deg);
   }
 }
 
@@ -200,13 +200,15 @@
   align-items: center;
   width: 100%;
   padding: 20px;
+  position: fixed;
+  background-color: black;
+  z-index: 1;
+  
 
   div{
     font-size: 2em;
-    width: 100px;
-    p{
-      font-size: small;
-    }
+    border-radius: 70px;
+    overflow: hidden;
   }
 
   ul{
@@ -257,7 +259,9 @@
         padding: 10px;
 
       }
+      
     }
+    position: absolute;
 
   }
 
@@ -266,6 +270,8 @@
   }
 
 }
+
+
 
 /* Project section */
 
@@ -453,6 +459,30 @@
   }
 }
 
+/* Scroll up style */
+
+.scrollUpContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  padding: 10px;
+   .scrollUpWrap{
+    font-size: 3em;
+    color: #c4039a;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .scrollUpWrap{
+    font-size: 2em;
+  }
+}
+
 /*  illus  */
 
 .illus{
@@ -463,6 +493,7 @@
     width: 200px;
     margin-bottom: 2px;
   }
+
 }
 
 /*  contact section */
